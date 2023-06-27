@@ -3,11 +3,12 @@ from setuptools import setup, find_packages
 from guizero import __name__, __package__, __version__, __author__
 
 ## This is a Python 3 package only
+
 from sys import version_info
 if version_info.major != 3:
     print("This package will only work with Python 3. \n"
           "If you already have Python 3 installed try 'pip3 install guizero'.")
-
+    
 __desc__ = 'Python module to allow learners to easily create GUIs'
 __author_email__ = 'laura.sach@raspberrypi.org'
 __license__ = 'BSD'
